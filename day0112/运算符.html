@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	/*
+	 
+	 * != !== 有什么区别
+	 * != :与 == 对应。 判断值是否相等即可
+	 * ！== ：与=== 得应。判断值的相同，也判断数据类型
+	 * */
+	var num = 22;
+	var str = "22";
+	console.log(num == str);//true
+	console.log(num === str);//false
+	console.log(num != str);//false 值相等
+	console.log(num !== str);//true 数据类型不相同
+	/*
+	 逻辑运算符：
+	 ！：非
+	 || ： 或
+	 && ：与
+	 * */
+	//如果“||”前面为false，那么不管后面是true或false,那么返回值为后者
+	//如果“||”前者为true，那么不管后者是true或false，那么返回值为前者
+	console.log(0 || num);
+	console.log(num || str);
+	//如果“&&”前面为false，那么不管后者是true或false，那么返回值为前者
+	//如果“&&”前面为true，那么不管后者是true或false，那么返回值为后者
+	console.log(0 && num);
+	console.log(num && str);
+	
+	//三目运算符（三元运算符）
+	//表达式1 ? 表达式2 ： 表达式3；
+	//如果  表达式1  成立  则输出  表达式2；
+	//如果  表达式1  不成立  则输出  表达式3；
+	var age = 19;
+	var game = (age>18) ? "王者荣耀" : "贪吃蛇";
+</script>
