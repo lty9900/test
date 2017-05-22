@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+//    var ajax = new XMLHttpRequest();
+//    ajax.open("get","./data.json",true);
+//
+//    ajax.onreadystatechange = function(){
+//        if(ajax.readyState == 4 && (ajax.status == 200 || ajax.status == 304)){
+//            var data =  ajax.responseText;
+//            console.log(data);
+//        }
+//
+//    }
+//    ajax.send(null);
+    function fn(data){
+        console.log(data);
+    }
+/*
+*   ajax 和  jsonp
+*
+*   ajax  是获取数据，支持同源请求
+*   jsonp  获取数据，支持跨域请求
+*       同源 ： 协议名 域名 端口 必须一致
+*
+*   jsonp 的原理：
+*       1.使用 script 标签 根据 src 不受同源策略的影响
+*       2.在当前 html 页面中创建自定函数
+*       3.将请求的 url 地址 放在 script 标签中的 src 属性中 并在url末尾拼接自定义函数的函数名 cb/callback
+*       4.服务端接收到数据后，将 url 路径当中的自定义函数解析出来，将客户端所需要的数据和自定义函数进行拼接 传回服务器
+*       5.客户端接收到服务端数据后，自动调用自定义函数获取数据
+*
+* */
+</script>
+<script src="http://localhost:5656/getInfo?callback=fn"></script>

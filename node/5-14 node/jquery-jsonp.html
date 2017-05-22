@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+<script src="jquery-1.11.1.js"></script>
+<script>
+    $.ajax({
+        type:"get",
+        url:"https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=a",
+        dataType:"jsonp",   //这里写成 jsonp
+        jsonp:"cb",            //自定义函数在url中的属性
+        jsonpCallback:"fn",    //这是自定义函数的函数名
+        success:function(data){
+            console.log(data);
+        }
+    })
+</script>

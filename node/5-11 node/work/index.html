@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #box{
+            width: 800px;
+            /*border: 10px solid red;*/
+            margin: 50px auto;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        ul{
+            list-style: none;
+        }
+        ul>li{
+            cursor: pointer;
+        }
+        /*头部*/
+        header{
+            width: 100%;
+            overflow: hidden;
+        }
+        header>ul{
+
+            overflow: hidden;
+            width: 100%;
+            background-color: black;
+            border-radius: 20px;
+        }
+        header>ul>li{
+            float: left;
+            width: 33.3%;
+            color: beige;
+            text-align: center;
+            padding: 10px 0px;
+            font-weight: bold;
+        }
+        /*列表*/
+        section{
+            width: 100%;
+            overflow: hidden;
+        }
+        section>ul{
+            overflow: hidden;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        section>ul>li{
+            width: 100%;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        section>ul>li:hover{
+            background-color: greenyellow;
+        }
+        section>ul>li span{
+            float: left;
+            width: 33.3%;
+            text-align: center;
+            padding: 10px 0px;
+        }
+        /*底部分页*/
+        footer{
+            width: 100%;
+            overflow: hidden;
+        }
+        footer span:nth-of-type(1),footer span:nth-of-type(2){
+            float: left;
+        }
+        footer span:nth-of-type(3),footer span:nth-of-type(4){
+            float: right;
+        }
+        footer>span{
+            background-color: blueviolet;
+            border-radius: 10px;
+            padding: 5px;
+            margin:0px 10px;
+            cursor: pointer;
+            color: #fff;
+        }
+        
+        footer>ul>li{
+            float: left;
+            border:1px solid  greenyellow;
+            padding: 5px 10px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <header>
+            <ul>
+                <li>名字</li>
+                <li>性别</li>
+                <li>ID</li>
+            </ul>
+        </header>
+        <section>
+            <ul id="userListInfo">
+                <li>
+                    <span>小明</span>
+                    <span>男</span>
+                    <span>2870988783988</span>
+                </li>
+                <li>
+                    <span>小明</span>
+                    <span>男</span>
+                    <span>2870988783988</span>
+                </li>
+                <li>
+                    <span>小明</span>
+                    <span>男</span>
+                    <span>2870988783988</span>
+                </li>
+                <li>
+                    <span>小明</span>
+                    <span>男</span>
+                    <span>2870988783988</span>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <span>首页</span>
+            <span>上一页</span>
+            <ul id="page">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>3</li>
+                <li>3</li>
+            </ul>
+            <span>下一页</span>
+            <span>尾页</span>
+        </footer>
+    </div>
+</body>
+</html>
+<script src="js/ajax.js"></script>
+<script src="js/index.js"></script>
